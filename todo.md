@@ -1,0 +1,6 @@
+- [ ] Resolve merge conflicts from web-db-user upgrade (keep original Home.tsx and NotFound.tsx)
+- [ ] Create backend API route to verify Instagram username exists
+- [ ] Create backend API route to verify WhatsApp number exists
+- [ ] Integrate verification into ScanPage frontend with loading animation
+- [ ] Add verification step before scan starts (shows result to user)
+- [ ] Write vitest tests for verification endpoints
