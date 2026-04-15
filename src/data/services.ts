@@ -1,0 +1,264 @@
+import {
+    Search,
+    ShieldCheck,
+    Gavel,
+    TrendingUp,
+    Heart,
+    Globe,
+    MapPin,
+    UserSearch,
+    Briefcase,
+    AlertTriangle,
+    Baby,
+    FileSearch,
+    ShieldOff,
+    Users,
+} from "lucide-react";
+
+export interface Service {
+    slug: string;
+    icon: typeof Search;
+    title: string;
+    shortDesc: string;
+    fullDesc: string;
+    bullets: string[];
+    forWho: string[];
+    relatedSlugs: string[];
+}
+
+export const SERVICES: Service[] = [
+    {
+        slug: "investigacao-patrimonial",
+        icon: Search,
+        title: "Investigação patrimonial",
+        shortDesc: "Rastreamento de bens, empresas de fachada, laranjas e estruturas offshore.",
+        fullDesc: "Rastreamos bens ocultos, empresas de fachada, laranjas e estruturas offshore utilizadas para blindagem patrimonial. Nosso trabalho identifica quem realmente controla os ativos, mesmo quando não há rastro em papel. Cruzamos registros públicos, análise de fontes abertas e inteligência de campo para montar um mapa completo do patrimônio investigado. O resultado é um dossiê documentado com toda a cadeia de propriedade, pronto para uso em processos judiciais, arbitragens ou negociações.",
+        bullets: [
+            "Mapeamento de CNPJs e participações societárias ocultas",
+            "Identificação de testas-de-ferro e estruturas de blindagem",
+            "Rastreamento de imóveis, veículos e ativos financeiros",
+            "Relatório com cadeia de propriedade documentada",
+            "Material aceito como prova em processos judiciais",
+        ],
+        forWho: ["Advogados em processos de execução", "Empresários em litígios societários", "Cônjuges em processos de divórcio", "Credores buscando garantias"],
+        relatedSlugs: ["due-diligence", "inteligencia-financeira", "suporte-a-litigios"],
+    },
+    {
+        slug: "due-diligence",
+        icon: ShieldCheck,
+        title: "Due diligence",
+        shortDesc: "Verificação profunda de pessoas e empresas antes de decisões críticas.",
+        fullDesc: "Antes de fechar negócio, contratar um executivo ou formar uma parceria, é preciso saber com quem você está lidando. Nossa due diligence vai além do Google e dos registros públicos. Investigamos histórico criminal e processual, situação financeira, reputação de mercado, vínculos ocultos e qualquer informação relevante para a decisão. O resultado é um relatório objetivo que permite tomar decisões com segurança.",
+        bullets: [
+            "Background check de sócios, parceiros e executivos",
+            "Análise de reputação, litígios e dívidas",
+            "Verificação de credenciais e histórico profissional",
+            "Identificação de vínculos ocultos e conflitos de interesse",
+            "Relatório consolidado para tomada de decisão",
+        ],
+        forWho: ["Empresas em processo de M&A", "Fundos de investimento", "Conselhos de administração", "Profissionais contratando sócios"],
+        relatedSlugs: ["verificacao-de-antecedentes", "investigacao-patrimonial", "inteligencia-financeira"],
+    },
+    {
+        slug: "suporte-a-litigios",
+        icon: Gavel,
+        title: "Suporte a litígios",
+        shortDesc: "Produção de provas e inteligência para disputas judiciais e arbitragens.",
+        fullDesc: "Processos judiciais e arbitragens são vencidos com provas e inteligência. Atuamos ao lado de escritórios de advocacia para produzir material probatório robusto, investigar testemunhas e partes adversas, e fornecer inteligência estratégica que fundamenta teses jurídicas. Nosso trabalho segue metodologia legal e produz documentos aceitos por tribunais e câmaras arbitrais.",
+        bullets: [
+            "Produção de acervo probatório para litígios e arbitragens",
+            "Investigação de testemunhas, peritos e partes adversas",
+            "Inteligência para fundamentar teses jurídicas",
+            "Localização de ativos para garantia de execução",
+            "Documentação fotográfica e relatórios técnicos",
+        ],
+        forWho: ["Escritórios de advocacia", "Departamentos jurídicos corporativos", "Partes em arbitragens", "Advogados em execuções"],
+        relatedSlugs: ["investigacao-patrimonial", "investigacao-de-fraudes", "localizacao-de-pessoas"],
+    },
+    {
+        slug: "inteligencia-financeira",
+        icon: TrendingUp,
+        title: "Inteligência financeira",
+        shortDesc: "Investigação de desvios, movimentações suspeitas e fraude societária.",
+        fullDesc: "Seguimos o dinheiro até o destino final. Investigamos movimentações suspeitas, desvios de capital, fraude societária e lavagem de dinheiro. Cruzamos dados de transações, analisamos padrões de movimentação e identificamos contas intermediárias utilizadas para ocultar recursos. O resultado é um mapa completo do fluxo financeiro, com evidências documentadas para suporte jurídico e contábil.",
+        bullets: [
+            "Rastreamento de fluxos financeiros e transações atípicas",
+            "Análise de contas intermediárias e padrões de movimentação",
+            "Investigação de desvios societários e apropriação indébita",
+            "Identificação de esquemas de lavagem de dinheiro",
+            "Evidências para suporte jurídico e contábil",
+        ],
+        forWho: ["Empresas investigando fraudes internas", "Advogados em casos de desvio", "Sócios em litígios societários", "Compliance officers"],
+        relatedSlugs: ["investigacao-de-fraudes", "investigacao-patrimonial", "due-diligence"],
+    },
+    {
+        slug: "inteligencia-contrainteligencia",
+        icon: ShieldCheck,
+        title: "Inteligência e Contrainteligência",
+        shortDesc: "Operações de inteligência estratégica e proteção contra ameaças internas e externas.",
+        fullDesc: "Oferecemos serviços especializados de inteligência e contrainteligência para empresas e indivíduos que precisam de proteção estratégica. Nosso trabalho inclui coleta e análise de informações críticas, identificação de ameaças, monitoramento de adversários e implementação de medidas preventivas. Atuamos na proteção de segredos comerciais, prevenção de vazamentos e neutralização de operações hostis contra nossos clientes.",
+        bullets: [
+            "Coleta e análise de inteligência estratégica",
+            "Identificação e neutralização de ameaças",
+            "Proteção de informações sensíveis",
+            "Monitoramento de adversários e concorrentes",
+            "Assessoria em segurança corporativa",
+        ],
+        forWho: ["Executivos e empresários", "Empresas em setores competitivos", "Pessoas públicas e políticos", "Organizações com informações sensíveis"],
+        relatedSlugs: ["contraespionagem", "investigacao-digital", "due-diligence"],
+    },
+    {
+        slug: "investigacao-digital",
+        icon: Globe,
+        title: "Investigação digital",
+        shortDesc: "Análise de pegada digital, redes sociais, domínios e rastros online.",
+        fullDesc: "Tudo que alguém tenta esconder na internet, nós encontramos. Mapeamos presença digital, perfis em redes sociais, domínios registrados, e-mails vinculados e rastros online. Analisamos metadados, recuperamos conteúdo deletado quando possível e construímos um perfil digital completo do investigado. O trabalho é feito com metodologia forense, gerando material documentado para uso jurídico.",
+        bullets: [
+            "Mapeamento de presença digital e perfis vinculados",
+            "Análise de domínios, registros e infraestrutura web",
+            "Recuperação de conteúdo deletado e análise de metadados",
+            "Investigação de perfis falsos e identidades digitais",
+            "Relatório forense documentado",
+        ],
+        forWho: ["Vítimas de crimes digitais", "Empresas investigando vazamentos", "Advogados em casos de difamação online", "Pessoas ameaçadas virtualmente"],
+        relatedSlugs: ["localizacao-de-golpistas", "contraespionagem", "verificacao-de-antecedentes"],
+    },
+    {
+        slug: "localizacao-de-pessoas",
+        icon: MapPin,
+        title: "Localização de pessoas",
+        shortDesc: "Localização de pessoas desaparecidas, devedores, testemunhas e parentes perdidos.",
+        fullDesc: "Encontrar uma pessoa que desapareceu ou se esconde é uma das demandas mais frequentes que recebemos. Utilizamos cruzamento de registros públicos, análise de pegada digital, inteligência de fontes abertas e, quando necessário, trabalho de campo para localizar indivíduos em qualquer lugar do Brasil. Atuamos em casos de familiares desaparecidos, devedores que se ocultam, testemunhas-chave para processos judiciais e reconexões familiares. Cada caso recebe um plano operacional sob medida, com relatório de localização documentado e pronto para uso jurídico.",
+        bullets: [
+            "Localização por registros públicos e digitais",
+            "Rastreamento de devedores e testemunhas",
+            "Reconexão familiar e pessoas desaparecidas",
+            "Trabalho de campo quando necessário",
+            "Relatório de localização documentado",
+        ],
+        forWho: ["Famílias buscando parentes perdidos", "Advogados localizando testemunhas", "Credores buscando devedores", "Cartórios e tabeliães"],
+        relatedSlugs: ["localizacao-de-golpistas", "suporte-a-litigios", "investigacao-patrimonial"],
+    },
+    {
+        slug: "localizacao-de-golpistas",
+        icon: UserSearch,
+        title: "Localização de golpistas",
+        shortDesc: "Identificação e localização de autores de golpes financeiros, estelionato e fraudes digitais.",
+        fullDesc: "Golpes digitais e presenciais estão cada vez mais sofisticados. Quando a polícia não consegue agir com a velocidade necessária, nossa equipe entra em campo para identificar e localizar os responsáveis. Cruzamos dados de transações, analisamos perfis digitais, rastreamos contas bancárias e PIX utilizados na fraude e montamos um dossiê completo do golpista: identidade real, localização, vínculos e patrimônio. O material produzido é aceito como prova e pode ser encaminhado diretamente ao seu advogado ou à autoridade competente.",
+        bullets: [
+            "Rastreamento de contas e PIX usados no golpe",
+            "Identificação real do golpista",
+            "Análise de perfis digitais e vínculos",
+            "Localização física do autor",
+            "Dossiê completo para ação judicial",
+        ],
+        forWho: ["Vítimas de golpes PIX", "Empresas fraudadas", "Advogados representando vítimas", "Pessoas que caíram em estelionato"],
+        relatedSlugs: ["investigacao-digital", "investigacao-de-fraudes", "localizacao-de-pessoas"],
+    },
+    {
+        slug: "investigacao-trabalhista",
+        icon: Briefcase,
+        title: "Investigação trabalhista",
+        shortDesc: "Monitoramento de empregados, verificação de atestados falsos e desvios de conduta.",
+        fullDesc: "Funcionários que faltam com atestados falsos, exercem atividades paralelas durante o expediente, violam cláusulas de não-concorrência ou desviam recursos da empresa causam prejuízos que vão além do financeiro. Nossa equipe investiga a conduta de empregados com discrição total: monitoramento em campo, análise de redes sociais, verificação de vínculos com concorrentes e documentação fotográfica. O relatório produzido serve como base para demissão por justa causa, ação trabalhista ou medidas disciplinares internas.",
+        bullets: [
+            "Verificação de atestados e atividades paralelas",
+            "Monitoramento discreto em campo",
+            "Análise de redes sociais e atividades online",
+            "Verificação de vínculos com concorrentes",
+            "Relatório com provas para ação trabalhista",
+        ],
+        forWho: ["Departamentos de RH", "Empresários", "Gestores de equipes", "Advogados trabalhistas"],
+        relatedSlugs: ["investigacao-de-fraudes", "concorrencia-desleal", "verificacao-de-antecedentes"],
+    },
+    {
+        slug: "investigacao-de-fraudes",
+        icon: AlertTriangle,
+        title: "Investigação de fraudes",
+        shortDesc: "Identificação de fraudes financeiras, empresariais e contratuais com coleta de provas.",
+        fullDesc: "Fraudes financeiras e empresariais podem destruir patrimônios construídos ao longo de décadas. Atuamos na identificação de esquemas fraudulentos, coleta de evidências e mapeamento dos envolvidos. Nosso trabalho inclui análise de documentos, cruzamento de informações financeiras, investigação de fornecedores e parceiros comerciais suspeitos e identificação de desvios internos. Produzimos material probatório robusto para fundamentar ações judiciais, denúncias ao Ministério Público ou decisões empresariais.",
+        bullets: [
+            "Análise documental e financeira",
+            "Identificação de esquemas e envolvidos",
+            "Investigação de fornecedores e parceiros suspeitos",
+            "Mapeamento de desvios internos",
+            "Provas para ação judicial ou denúncia",
+        ],
+        forWho: ["Empresas vítimas de fraude", "Conselhos de administração", "Compliance officers", "Advogados em casos de fraude"],
+        relatedSlugs: ["inteligencia-financeira", "investigacao-trabalhista", "due-diligence"],
+    },
+    {
+        slug: "investigacao-de-custodia",
+        icon: Baby,
+        title: "Investigação de custódia",
+        shortDesc: "Levantamento de provas para disputas de guarda de filhos e proteção de menores.",
+        fullDesc: "Em disputas de guarda, o bem-estar da criança é a prioridade. Realizamos investigações para documentar o ambiente doméstico, a rotina e o comportamento dos responsáveis. Avaliamos condições de moradia, presença de pessoas inadequadas no convívio da criança, uso de substâncias e qualquer fator que possa comprometer a segurança do menor. Nossos relatórios são detalhados e documentados com fotografias, depoimentos e observações de campo. Material aceito por varas de família.",
+        bullets: [
+            "Avaliação do ambiente e rotina dos responsáveis",
+            "Verificação de condições de moradia",
+            "Identificação de fatores de risco para o menor",
+            "Documentação fotográfica e observacional",
+            "Material para varas de família",
+        ],
+        forWho: ["Pais em disputa de guarda", "Advogados de família", "Avós buscando guarda", "Famílias preocupadas com menores"],
+        relatedSlugs: ["inteligencia-contrainteligencia", "localizacao-de-pessoas", "verificacao-de-antecedentes"],
+    },
+    {
+        slug: "verificacao-de-antecedentes",
+        icon: FileSearch,
+        title: "Verificação de antecedentes",
+        shortDesc: "Background check completo: criminal, financeiro, profissional e reputacional.",
+        fullDesc: "Conhecer a real história de uma pessoa é essencial antes de decisões importantes, seja para contratações, parcerias comerciais, relacionamentos ou negociações. Realizamos verificação completa de antecedentes que inclui: histórico criminal e processual, situação financeira e restrições, histórico profissional e acadêmico, presença digital e reputação online, vínculos societários e patrimoniais. Tudo é entregue em um relatório consolidado, objetivo e documentado.",
+        bullets: [
+            "Histórico criminal, processual e financeiro",
+            "Verificação profissional e acadêmica",
+            "Análise de vínculos societários e patrimoniais",
+            "Presença digital e reputação online",
+            "Relatório consolidado e objetivo",
+        ],
+        forWho: ["RH em processos seletivos", "Empresas avaliando parceiros", "Pessoas iniciando relacionamentos", "Famílias verificando cuidadores"],
+        relatedSlugs: ["due-diligence", "investigacao-digital", "investigacao-trabalhista"],
+    },
+    {
+        slug: "contraespionagem",
+        icon: ShieldOff,
+        title: "Contraespionagem e proteção",
+        shortDesc: "Varredura técnica, blindagem de informação e defesa contra espionagem corporativa.",
+        fullDesc: "Executivos, empresários e pessoas públicas são alvos frequentes de operações de inteligência hostis, sejam de concorrentes, ex-parceiros ou adversários em litígios. Oferecemos varredura técnica de ambientes (detecção de dispositivos de escuta e câmeras ocultas), avaliação de vulnerabilidades digitais, protocolos de segurança da informação e orientação sobre conduta segura em comunicações. Nosso trabalho protege quem precisa operar com tranquilidade.",
+        bullets: [
+            "Detecção de escutas e câmeras ocultas",
+            "Varredura técnica de ambientes",
+            "Avaliação de vulnerabilidades digitais",
+            "Protocolos de segurança para executivos",
+            "Orientação sobre comunicações seguras",
+        ],
+        forWho: ["Executivos e empresários", "Pessoas públicas", "Advogados em casos sensíveis", "Empresas em negociações críticas"],
+        relatedSlugs: ["investigacao-digital", "concorrencia-desleal", "due-diligence"],
+    },
+    {
+        slug: "concorrencia-desleal",
+        icon: Users,
+        title: "Investigação de concorrência desleal",
+        shortDesc: "Investigação de práticas comerciais desonestas, espionagem industrial e desvio de clientela.",
+        fullDesc: "Quando um concorrente está usando táticas ilegais (espionagem industrial, aliciamento de funcionários, cópia de segredos comerciais ou desvio de clientela), a resposta precisa ser rápida e documentada. Investigamos as práticas do concorrente, coletamos provas de conduta desleal e mapeamos os danos causados. O dossiê produzido fundamenta ações judiciais por concorrência desleal, pedidos de indenização e medidas cautelares.",
+        bullets: [
+            "Investigação de espionagem industrial",
+            "Provas de desvio de clientela e aliciamento",
+            "Identificação de vazamento de informações",
+            "Mapeamento de danos causados",
+            "Dossiê para ação judicial",
+        ],
+        forWho: ["Empresas vítimas de concorrência desleal", "Advogados empresariais", "Sócios investigando parceiros", "Departamentos jurídicos"],
+        relatedSlugs: ["contraespionagem", "investigacao-trabalhista", "investigacao-de-fraudes"],
+    },
+];
+
+// Helper function to get service by slug
+export function getServiceBySlug(slug: string): Service | undefined {
+    return SERVICES.find((s) => s.slug === slug);
+}
+
+// Helper function to get related services
+export function getRelatedServices(slugs: string[]): Service[] {
+    return SERVICES.filter((s) => slugs.includes(s.slug));
+}
