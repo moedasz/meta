@@ -13,7 +13,7 @@ const DIFFERENTIALS = [
     {
         icon: Users,
         title: "Equipe multidisciplinar",
-        desc: "Investigadores, analistas de inteligência, especialistas em forense digital e análise financeira.",
+        desc: "Investigadores, analistas de inteligência, especialistas em forense digital, pentesters e analistas de segurança.",
     },
     {
         icon: MapPin,
@@ -40,8 +40,8 @@ const TIMELINE = [
     },
     {
         year: "2024",
-        title: "Inteligência financeira",
-        desc: "Criação do núcleo especializado em investigação de fraudes e crimes financeiros.",
+        title: "Segurança digital",
+        desc: "Expansão para ethical hacking, monitoramento digital e serviços de cibersegurança.",
     },
 ];
 
@@ -106,14 +106,16 @@ export function Sobre() {
                         style={{ lineHeight: 1.8 }}
                     >
                         <p>
-                            A Bforense é uma agência de investigações privada especializada em inteligência, 
-                            investigação patrimonial e produção de provas. Atuamos em todo o território nacional, 
-                            atendendo pessoas físicas, empresas e escritórios de advocacia.
+                            A Bforense é uma agência especializada em investigação, inteligência e segurança digital. 
+                            Atuamos em todo o território nacional, atendendo pessoas físicas, empresas e escritórios 
+                            de advocacia com serviços que vão desde investigação patrimonial até ethical hacking e 
+                            monitoramento de ameaças digitais.
                         </p>
                         <p>
                             Nossa equipe combina experiência em investigação forense digital, análise de fontes 
-                            abertas e inteligência humana. Trabalhamos com metodologia legal, sob a Lei Federal 
-                            13.432/2017, e produzimos material aceito como prova em processos judiciais e arbitragens.
+                            abertas, inteligência humana e segurança cibernética. Trabalhamos com metodologia legal, 
+                            sob a Lei Federal 13.432/2017, e produzimos material aceito como prova em processos 
+                            judiciais e arbitragens.
                         </p>
                         <p>
                             Operamos com sigilo absoluto. Não divulgamos identidade de clientes, não publicamos 
@@ -257,6 +259,14 @@ export function Sobre() {
                             <li className="flex items-start gap-3">
                                 <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2.5 flex-shrink-0" />
                                 <span>Cruzamento de informações e inteligência de dados</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2.5 flex-shrink-0" />
+                                <span>Testes de penetração autorizados (ethical hacking)</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2.5 flex-shrink-0" />
+                                <span>Monitoramento contínuo de ameaças digitais e dark web</span>
                             </li>
                         </ul>
                         <p>

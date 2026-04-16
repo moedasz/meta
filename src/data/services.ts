@@ -13,6 +13,8 @@ import {
     FileSearch,
     ShieldOff,
     Users,
+    Bug,
+    Eye,
 } from "lucide-react";
 
 export interface Service {
@@ -250,6 +252,38 @@ export const SERVICES: Service[] = [
         ],
         forWho: ["Empresas vítimas de concorrência desleal", "Advogados empresariais", "Sócios investigando parceiros", "Departamentos jurídicos"],
         relatedSlugs: ["contraespionagem", "investigacao-trabalhista", "investigacao-de-fraudes"],
+    },
+    {
+        slug: "ethical-hacking",
+        icon: Bug,
+        title: "Ethical Hacking",
+        shortDesc: "Testes de invasão autorizados para identificar vulnerabilidades antes que atacantes o façam.",
+        fullDesc: "Nosso serviço de ethical hacking (pentest) simula ataques reais contra sua infraestrutura digital para identificar vulnerabilidades antes que criminosos as explorem. Realizamos testes de penetração em aplicações web, APIs, redes corporativas, sistemas internos e infraestrutura cloud. Cada vulnerabilidade encontrada é documentada com nível de risco, prova de conceito e recomendação de correção. Trabalhamos com metodologias reconhecidas internacionalmente (OWASP, PTES, NIST) e entregamos relatórios técnicos e executivos.",
+        bullets: [
+            "Pentest de aplicações web e APIs",
+            "Testes de invasão em redes e infraestrutura",
+            "Avaliação de segurança em ambientes cloud",
+            "Engenharia social e phishing simulado",
+            "Relatório técnico com provas de conceito e correções",
+        ],
+        forWho: ["Empresas com sistemas críticos", "Startups e fintechs", "E-commerces e plataformas digitais", "Departamentos de TI e segurança"],
+        relatedSlugs: ["monitoramento-digital", "contraespionagem", "investigacao-digital"],
+    },
+    {
+        slug: "monitoramento-digital",
+        icon: Eye,
+        title: "Monitoramento Digital",
+        shortDesc: "Vigilância contínua de ameaças digitais, vazamentos de dados e menções à sua marca.",
+        fullDesc: "Monitoramos continuamente a internet em busca de ameaças contra sua empresa ou pessoa. Rastreamos vazamentos de dados em fóruns criminosos e dark web, identificamos domínios falsos e perfis fraudulentos, monitoramos menções negativas e campanhas de difamação, e detectamos credenciais comprometidas. Nosso sistema de alertas permite resposta rápida a incidentes, minimizando danos à reputação e prevenindo ataques antes que ocorram.",
+        bullets: [
+            "Monitoramento de dark web e fóruns criminosos",
+            "Detecção de vazamentos de dados e credenciais",
+            "Identificação de domínios e perfis fraudulentos",
+            "Vigilância de marca e reputação online",
+            "Alertas em tempo real e relatórios periódicos",
+        ],
+        forWho: ["Empresas preocupadas com vazamentos", "Executivos e pessoas públicas", "E-commerces e marcas digitais", "Departamentos de segurança da informação"],
+        relatedSlugs: ["ethical-hacking", "investigacao-digital", "contraespionagem"],
     },
 ];
 

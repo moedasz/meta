@@ -22,7 +22,7 @@ export function Servicos() {
                             className="font-heading text-3xl sm:text-4xl md:text-5xl leading-tight mb-4 tracking-tight text-gradient-headline"
                             style={{ fontWeight: 600, letterSpacing: "-0.02em" }}
                         >
-                            Serviços de investigação e inteligência
+                            Investigação, inteligência e segurança digital
                         </h1>
                     </motion.div>
                     <motion.p
