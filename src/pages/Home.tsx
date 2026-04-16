@@ -472,9 +472,9 @@ export function Home() {
                             className="font-heading text-[clamp(1.625rem,4.7vw,2.925rem)] leading-[1.15] mb-6 tracking-tight"
                             style={{ fontWeight: 600, letterSpacing: "-0.02em" }}
                         >
-                            <span className="text-white whitespace-nowrap">Descubra a Verdade</span>
+                            <span className="text-white whitespace-nowrap">Descubra o que</span>
                             <br />
-                            <span className="text-white whitespace-nowrap">que Você Precisa</span>
+                            <span className="text-white whitespace-nowrap">Você Precisa</span>
                             <br />
   <span className="text-white">Descobrir </span>
   <span className="text-gold-accent whitespace-nowrap">e Vença <span className="inline-block" style={{ transform: "scaleX(-1)" }}>🦅</span></span>
