@@ -7,6 +7,7 @@ export default defineConfig({
     server: {
         port: parseInt(process.env.PORT || "3001"),
         host: true,
+        allowedHosts: true,
     },
     build: {
         outDir: "dist",
